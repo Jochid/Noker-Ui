@@ -161,7 +161,7 @@ Items.ScaleType = Enum.ScaleType.Slice
 Items.SliceCenter = Rect.new(100, 100, 100, 100)
 Items.SliceScale = 0.020
 
-local opened = true
+local opene  true
 Toggle.MouseButton1Click:Connect(function()
 			if opened then
 		Main.Visible = false
