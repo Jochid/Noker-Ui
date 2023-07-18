@@ -1,21 +1,21 @@
 local library = {}
 function play(id)
-    for _, v in next, workspace:GetChildren() do
+    for _, v in  workspace:GetChildren() do
         if v.Name == "GUISound" then
-            v:Destroy()
+            ()
         end
-    end
+
     local Sound = Instance.new("Sound", workspace)
     Sound.Name = "GUISound"
     Sound.Volume = 6
-    Sound.SoundId = id
-    Sound:Play()
+    Noker .SoundId = id
+Sound:Play()
  end
 
-function library:CreateWindow(name,theme)
+functio library:CreateWindow(name,theme)
 local theme1
-local theme2
-local theme3
+loca theme2
+local theme
 local toolight = false
     for i,v in pairs(game.CoreGui:GetChildren()) do
 if v.Name == "By Shaddow" then
@@ -36,15 +36,7 @@ elseif theme == "Reverse" then
 elseif theme == "Blood" then
     theme1 = Color3.fromRGB(32,32,32)
     theme2 = Color3.fromRGB(26,26,26)
-    theme3 = Color3.fromRGB(138, 3, 3)
-    print("Theme selected: "..theme)
-elseif theme == "Gainsboro" then
-    theme1 = Color3.fromRGB(32,32,32)
-    theme2 = Color3.fromRGB(26,26,26)
-    theme3 = Color3.fromRGB(220, 220, 221)
-    toolight = true
-    print("Theme selected: "..theme)
-elseif theme == "Canary" then
+    
     theme1 = Color3.fromRGB(32,32,32)
     theme2 = Color3.fromRGB(26,26,26)
     theme3 = Color3.fromRGB(255, 253, 130)
@@ -66,21 +58,7 @@ elseif theme == "Deep Sea" then
     print("Theme selected: "..theme)
 end
 
-local Screen = Instance.new("ScreenGui")
-local Top = Instance.new("ImageLabel")
-local Toggle = Instance.new("ImageButton")
-local Main = Instance.new("ImageLabel")
-local Tabs = Instance.new("ImageLabel")
-local UIGridLayout = Instance.new("UIGridLayout")
-local TabContainer = Instance.new("Folder")
-local Items = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
-
---Properties:
-
-Screen.Name = "By Shaddow"
-Screen.Parent = game:WaitForChild("CoreGui")
-Screen.Enabled = true
+ue
 
 Top.Name = "Top"
 Top.Parent = Screen
